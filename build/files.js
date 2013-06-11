@@ -1,5 +1,6 @@
 [
 "src/module.js",
+"src/controllers/jqmTheme.js",
 "src/services/animationComplete.js",
 "src/services/snifferDecorator.js",
 "src/services/browserDecorator.js",
@@ -8,6 +9,7 @@
 "src/services/scopeDecorator.js",
 "src/services/templateCacheDecorator.js",
 "src/directives/jqmPage.js",
+"src/directives/jqmTheme.js",
 "src/directives/html.js",
 "src/directives/jqmViewport.js",
 "src/directives/jqmCachingView.js",
