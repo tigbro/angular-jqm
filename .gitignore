@@ -1,6 +1,9 @@
 # Mac files
 .DS_Store
 
+# Tmp folder where concat files are stored
+.tmp
+
 # Ignore node and bower modules
 node_modules
 components

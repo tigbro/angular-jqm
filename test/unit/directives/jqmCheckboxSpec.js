@@ -7,8 +7,8 @@ describe("jqmCheckbox", function () {
     });
 
     describe('markup compared to jqm', function () {
-        it("has same markup if unchecked", function () {
-            var ngElement = ng.init('<div jqm-checkbox label="someLabel"></div>');
+        iit("has same markup if unchecked", function () {
+            var ngElement = ng.init('<div jqm-checkbox>someLabel</div>');
             var jqmElement = jqm.init('<label for="someChk">someLabel</label>'+
                 '<input id="someChk" type="checkbox">');
             testutils.compareElementRecursive(ngElement, jqmElement);

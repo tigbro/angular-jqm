@@ -1,1 +1,1 @@
-var jqmModule = angular.module("jqm", []);
+var jqmModule = angular.module("jqm", ['jqm-templates']);

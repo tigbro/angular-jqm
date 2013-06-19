@@ -11,8 +11,18 @@ module.exports = function(grunt) {
           banner: grunt.file.read('build/header.js'),
           footer: grunt.file.read('build/footer.js')
         },
-        src: srcFiles,
+        src: srcFiles.concat('.tmp/angular-jqm-templates.js'),
         dest: 'dist/<%= pkg.name %>.js'
+      }
+    },
+    html2js: {
+      all: {
+        options: {
+          base: 'src',
+          module: 'jqm-templates'
+        },
+        src: ['src/templates/**/*.html'],
+        dest: '.tmp/angular-jqm-templates.js'
       }
     },
     uglify: {
@@ -150,6 +160,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['install', 'concat','jshint','karma:localBuild']);
   grunt.registerTask('travis', ['concat','jshint','karma:travis']);
 
+  grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-conventional-changelog');
   grunt.loadNpmTasks('grunt-contrib-concat');

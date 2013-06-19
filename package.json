@@ -14,7 +14,8 @@
     "grunt-karma": "latest",
     "phantomjs": "latest",
     "bower": "0.8.x",
-    "grunt-conventional-changelog": "git://github.com/btford/grunt-conventional-changelog"
+    "grunt-conventional-changelog": "git://github.com/btford/grunt-conventional-changelog",
+    "grunt-html2js": "~0.1.3"
   },
   "engine": "node 0.8.x",
   "repository": {
