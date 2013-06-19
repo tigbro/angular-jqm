@@ -1,0 +1,14 @@
+
+<div class="ui-checkbox" ng-click="toggle()" ng-class="{'ui-disabled': disabled}">
+  <label class="ui-btn ui-btn-corner-all ui-fullsize ui-btn-icon-left"
+   ng-class="checked ? 'ui-checkbox-on' : 'ui-checkbox-off'"
+   jqm-theme-class="ui-btn-up-$">
+    <span class="ui-btn-inner">
+      <span class="ui-btn-text" ng-transclude></span>
+      <span class="ui-icon ui-icon-shadow"
+       ng-class="checked ? 'ui-icon-checkbox-on' : 'ui-icon-checkbox-off'">
+      </span>
+    </span>
+  </label>
+  <input type="checkbox" ng-checked="checked">
+</div>
